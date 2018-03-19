@@ -1,11 +1,17 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html *
+{
+   
+}
+
 .button {
   border-radius: 100px;
 }
 
 .body{
-    font-family: 'Merriweather', serif;
+    
 }
 
 /* Sections
@@ -40,26 +46,26 @@
   background-size: cover;
   background-color: #000000;
   color: #FFF;
-  padding-bottom: 5rem;
+  /*padding-bottom: 5rem;*/
 }
 .value-multiplier {
-  font-family: 'Merriweather', serif;
   margin-bottom: .5rem;
   color: #FFF;
 }
 .value-heading {
-  font-family: 'Merriweather', serif;
   margin-bottom: .3rem;
 }
 .value-description {
-  font-family: 'Merriweather', serif;
   opacity: .8;
   font-weight: 300;
 }
 
-.myButton{
-  /*color: #000;*/
+.profile {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
 
+.myButton{
   color:#FF0000;
   background-color: #ffffff;
   border-color: #000000;
@@ -79,10 +85,18 @@
   background-color: #000000;
   color: #FFF;
 }
+
 .categories .section-description { 
   margin-bottom: 4rem;
 }
 
+.box{
+  padding: 45px;
+  /*border-size:15px;*/
+  border-style: none none none solid;
+  border-color:red;
+  /*border-style: groove;*/
+}
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
@@ -109,28 +123,33 @@
     max-height: 338px;
   }
   .hero-heading {
+
     /*color:#FF0000;*/
     font-weight: 300;
-    font-family: 'Merriweather', serif;
+    font-family: 'Work Sans', sans-serif !important;
     font-size: 2.4rem;
     margin-bottom: .0rem;
   }
   .hero-name {
     font-weight: 700;
-    font-family: 'Merriweather', serif;
+    font-family: 'Work Sans', sans-serif !important;
     font-size: 4.4rem;
     margin-bottom: .2rem;
   }
 
   .hero-profession {
     font-weight: 400;
-    font-family: 'Merriweather', serif;
+    font-family: 'Work Sans', sans-serif !important;
     font-size: 3rem;
   }
 }
 
 span.red{
     color:#FF0000;
+}
+
+span.yellow{
+    color:#FFC30F;
 }
 /* Bigger than 750 */
 @media (min-width: 750px) {
@@ -169,7 +188,7 @@ span.red{
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 20rem 0 19rem;
+    /*padding: 20rem 0 19rem;*/
   }
   .hero {
     padding: 22rem 0;
@@ -185,4 +204,352 @@ span.red{
     top: -14rem;
     max-height: 570px;
   }
+}
+
+.social {
+  color: #000;
+  text-decoration: none;
+  font-size: 32px;
+  /*display: inline-block;*/
+  padding: 15px;
+  /*text-align: center;*/
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  /*border-style: solid;
+  border-color: red;*/
+}
+.linkedin{
+  /*background: black;
+  color: #FFF;*/
+
+  border-style: none none none solid;
+  border-color: #ED872D;
+}
+
+.social:hover {
+  background: black;
+  color:#FFF;
+  /*border-style: solid;
+  border-color: red;*/
+}
+.social:hover.twitter {
+  color:#FFF;
+}
+.social:hover.facebook {
+  color:#FFF;
+}
+.social:hover.instagram {
+  color: #FFF;
+}
+.social:hover.linkedin {
+  /*background: white;
+  color: #000;*/
+
+  color: #FFF;
+}
+.social:hover.git {
+  color: #FFF;
+}
+.social:hover.pinterest {
+  color: #FFF;
+}
+.social:hover.email {
+  color: #FFF;
+}
+
+@-webkit-keyframes glitch {
+  100% {
+    clip: rect(40px, 9999px, 82px, 0);
+  }
+  95% {
+    clip: rect(81px, 9999px, 84px, 0);
+  }
+  90% {
+    clip: rect(77px, 9999px, 3px, 0);
+  }
+  85% {
+    clip: rect(61px, 9999px, 8px, 0);
+  }
+  80% {
+    clip: rect(73px, 9999px, 10px, 0);
+  }
+  75% {
+    clip: rect(27px, 9999px, 12px, 0);
+  }
+  70% {
+    clip: rect(8px, 9999px, 63px, 0);
+  }
+  65% {
+    clip: rect(89px, 9999px, 61px, 0);
+  }
+  60% {
+    clip: rect(55px, 9999px, 22px, 0);
+  }
+  55% {
+    clip: rect(13px, 9999px, 37px, 0);
+  }
+  50% {
+    clip: rect(88px, 9999px, 79px, 0);
+  }
+  45% {
+    clip: rect(59px, 9999px, 25px, 0);
+  }
+  40% {
+    clip: rect(63px, 9999px, 88px, 0);
+  }
+  35% {
+    clip: rect(13px, 9999px, 57px, 0);
+  }
+  30% {
+    clip: rect(97px, 9999px, 63px, 0);
+  }
+  25% {
+    clip: rect(53px, 9999px, 70px, 0);
+  }
+  20% {
+    clip: rect(57px, 9999px, 48px, 0);
+  }
+  15% {
+    clip: rect(97px, 9999px, 27px, 0);
+  }
+  10% {
+    clip: rect(31px, 9999px, 22px, 0);
+  }
+  5% {
+    clip: rect(38px, 9999px, 17px, 0);
+  }
+}
+@keyframes glitch {
+  100% {
+    clip: rect(40px, 9999px, 82px, 0);
+  }
+  95% {
+    clip: rect(81px, 9999px, 84px, 0);
+  }
+  90% {
+    clip: rect(77px, 9999px, 3px, 0);
+  }
+  85% {
+    clip: rect(61px, 9999px, 8px, 0);
+  }
+  80% {
+    clip: rect(73px, 9999px, 10px, 0);
+  }
+  75% {
+    clip: rect(27px, 9999px, 12px, 0);
+  }
+  70% {
+    clip: rect(8px, 9999px, 63px, 0);
+  }
+  65% {
+    clip: rect(89px, 9999px, 61px, 0);
+  }
+  60% {
+    clip: rect(55px, 9999px, 22px, 0);
+  }
+  55% {
+    clip: rect(13px, 9999px, 37px, 0);
+  }
+  50% {
+    clip: rect(88px, 9999px, 79px, 0);
+  }
+  45% {
+    clip: rect(59px, 9999px, 25px, 0);
+  }
+  40% {
+    clip: rect(63px, 9999px, 88px, 0);
+  }
+  35% {
+    clip: rect(13px, 9999px, 57px, 0);
+  }
+  30% {
+    clip: rect(97px, 9999px, 63px, 0);
+  }
+  25% {
+    clip: rect(53px, 9999px, 70px, 0);
+  }
+  20% {
+    clip: rect(57px, 9999px, 48px, 0);
+  }
+  15% {
+    clip: rect(97px, 9999px, 27px, 0);
+  }
+  10% {
+    clip: rect(31px, 9999px, 22px, 0);
+  }
+  5% {
+    clip: rect(38px, 9999px, 17px, 0);
+  }
+}
+@-webkit-keyframes glitch2 {
+  100% {
+    clip: rect(62px, 9999px, 12px, 0);
+  }
+  95% {
+    clip: rect(78px, 9999px, 61px, 0);
+  }
+  90% {
+    clip: rect(38px, 9999px, 43px, 0);
+  }
+  85% {
+    clip: rect(81px, 9999px, 34px, 0);
+  }
+  80% {
+    clip: rect(90px, 9999px, 90px, 0);
+  }
+  75% {
+    clip: rect(32px, 9999px, 48px, 0);
+  }
+  70% {
+    clip: rect(98px, 9999px, 43px, 0);
+  }
+  65% {
+    clip: rect(2px, 9999px, 30px, 0);
+  }
+  60% {
+    clip: rect(96px, 9999px, 95px, 0);
+  }
+  55% {
+    clip: rect(89px, 9999px, 7px, 0);
+  }
+  50% {
+    clip: rect(33px, 9999px, 1px, 0);
+  }
+  45% {
+    clip: rect(48px, 9999px, 31px, 0);
+  }
+  40% {
+    clip: rect(24px, 9999px, 59px, 0);
+  }
+  35% {
+    clip: rect(88px, 9999px, 44px, 0);
+  }
+  30% {
+    clip: rect(28px, 9999px, 39px, 0);
+  }
+  25% {
+    clip: rect(62px, 9999px, 45px, 0);
+  }
+  20% {
+    clip: rect(57px, 9999px, 57px, 0);
+  }
+  15% {
+    clip: rect(29px, 9999px, 21px, 0);
+  }
+  10% {
+    clip: rect(36px, 9999px, 89px, 0);
+  }
+  5% {
+    clip: rect(88px, 9999px, 62px, 0);
+  }
+}
+@keyframes glitch2 {
+  100% {
+    clip: rect(62px, 9999px, 12px, 0);
+  }
+  95% {
+    clip: rect(78px, 9999px, 61px, 0);
+  }
+  90% {
+    clip: rect(38px, 9999px, 43px, 0);
+  }
+  85% {
+    clip: rect(81px, 9999px, 34px, 0);
+  }
+  80% {
+    clip: rect(90px, 9999px, 90px, 0);
+  }
+  75% {
+    clip: rect(32px, 9999px, 48px, 0);
+  }
+  70% {
+    clip: rect(98px, 9999px, 43px, 0);
+  }
+  65% {
+    clip: rect(2px, 9999px, 30px, 0);
+  }
+  60% {
+    clip: rect(96px, 9999px, 95px, 0);
+  }
+  55% {
+    clip: rect(89px, 9999px, 7px, 0);
+  }
+  50% {
+    clip: rect(33px, 9999px, 1px, 0);
+  }
+  45% {
+    clip: rect(48px, 9999px, 31px, 0);
+  }
+  40% {
+    clip: rect(24px, 9999px, 59px, 0);
+  }
+  35% {
+    clip: rect(88px, 9999px, 44px, 0);
+  }
+  30% {
+    clip: rect(28px, 9999px, 39px, 0);
+  }
+  25% {
+    clip: rect(62px, 9999px, 45px, 0);
+  }
+  20% {
+    clip: rect(57px, 9999px, 57px, 0);
+  }
+  15% {
+    clip: rect(29px, 9999px, 21px, 0);
+  }
+  10% {
+    clip: rect(36px, 9999px, 89px, 0);
+  }
+  5% {
+    clip: rect(88px, 9999px, 62px, 0);
+  }
+}
+
+.glitch_text {
+  font-weight: 100;
+  font-family: 'Exo 2';
+  padding: 20px 0 20px 10px;
+  font-size: 3em;
+  position: relative;
+  color: black;
+      /*color:#FF0000;*/
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 2.4rem;
+    margin-bottom: .0rem;
+}
+.glitch_text:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 12px;
+  text-shadow: -1px 0 green;
+  top: 20px;
+  color: black;
+  background: #FFF;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+      /*color:#FF0000;*/
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 2.4rem;
+    margin-bottom: .0rem;
+  -webkit-animation: glitch 2s infinite linear alternate-reverse;
+}
+.glitch_text:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 12px;
+  text-shadow: 1px 0 red;
+  top: 20px;
+  color: black;
+  background: #FFF;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+      /*color:#FF0000;*/
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 2.4rem;
+    margin-bottom: .0rem;
+  -webkit-animation: glitch2 3s infinite linear alternate-reverse;
 }
