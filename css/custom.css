@@ -5,6 +5,18 @@ html *
 {
    
 }
+html, body {
+  height: 100%;
+}
+body {
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .button {
   border-radius: 100px;
@@ -71,6 +83,13 @@ html *
   border-color: #000000;
   border-width: .2rem;
 }
+
+.myButton:hover{
+  color:#000;
+  /*background-color: #000;*/
+  border-color: #FF0000;
+  border-width: .2rem;
+}
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
@@ -97,15 +116,21 @@ html *
   border-color:red;
   /*border-style: groove;*/
 }
+
+mark.red {
+    color:#ff0000;
+    background: none;
+}
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
     padding: 12rem 0 11rem;
   }
   .hero {
-    padding-bottom: 12rem;
+    /*padding-bottom: 12rem;*/
+    vertical-align: middle;
     text-align: left;
-    height: 165px;
+    /*height: 165px;*/
   }
   .phone {
     position: absolute;
@@ -155,6 +180,7 @@ span.yellow{
 @media (min-width: 750px) {
 
   .hero {
+    vertical-align: middle;
     height: 190px;
   }
   .hero-heading {
@@ -164,7 +190,8 @@ span.yellow{
     padding: 14rem 0 15rem;
   }
   .hero {
-    padding: 16rem 0 14rem;
+    vertical-align: middle;
+    /*padding: 16rem 0 14rem;*/
   }
   .section-description {
     max-width: 60%;
@@ -191,7 +218,8 @@ span.yellow{
     /*padding: 20rem 0 19rem;*/
   }
   .hero {
-    padding: 22rem 0;
+    vertical-align: middle;
+    /*padding: 22rem 0;*/
   }
   .hero-heading {
     font-size: 3.0rem;
@@ -229,12 +257,14 @@ span.yellow{
   color: #FFF;*/
 
   border-style: none none none solid;
-  border-color: #ED872D;
+  border-color: #FF0000;
 }
 
 .social:hover {
-  background: black;
-  color:#FFF;
+  background: red;
+  color:#FF0000;
+
+  transition: all .3s ease-in-out;
   /*border-style: solid;
   border-color: red;*/
 }
@@ -515,47 +545,97 @@ span.yellow{
 .glitch_text {
   font-weight: 100;
   font-family: 'Exo 2';
-  padding: 20px 0 20px 10px;
+  /*padding: 20px 0 20px 10px;*/
   font-size: 3em;
   position: relative;
   color: black;
-      /*color:#FF0000;*/
-    font-weight: 300;
-    font-family: 'Work Sans', sans-serif !important;
-    font-size: 2.4rem;
-    margin-bottom: .0rem;
+  /*color:#FF0000;*/
+  font-weight: 300;
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 2.4rem;
+  /*margin-bottom: .0rem;*/
 }
+
 .glitch_text:after {
   content: attr(data-text);
   position: absolute;
-  left: 12px;
+  left: 2px;
   text-shadow: -1px 0 green;
-  top: 20px;
+  /*top: 20px;*/
   color: black;
   background: #FFF;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-      /*color:#FF0000;*/
-    font-weight: 300;
-    font-family: 'Work Sans', sans-serif !important;
-    font-size: 2.4rem;
-    margin-bottom: .0rem;
+  /*color:#FF0000;*/
+  font-weight: 300;
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 2.4rem;
+  /*margin-bottom: .0rem;*/
   -webkit-animation: glitch 2s infinite linear alternate-reverse;
 }
+
 .glitch_text:before {
   content: attr(data-text);
   position: absolute;
-  left: 12px;
+  left: 2px;
   text-shadow: 1px 0 red;
-  top: 20px;
+  /*top: 20px;*/
   color: black;
   background: #FFF;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-      /*color:#FF0000;*/
-    font-weight: 300;
-    font-family: 'Work Sans', sans-serif !important;
-    font-size: 2.4rem;
-    margin-bottom: .0rem;
+  /*color:#FF0000;*/
+  font-weight: 300;
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 2.4rem;
+  /*margin-bottom: .0rem;*/
   -webkit-animation: glitch2 3s infinite linear alternate-reverse;
+}
+
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+.load {
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  background: white;
+}
+
+.term {
+  font-family: monospace;
+  color: #000;
+  opacity: 0.8;
+  font-size: 2em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.term:after {
+  content: "_";
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
