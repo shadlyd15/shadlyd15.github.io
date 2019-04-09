@@ -90,6 +90,7 @@ body {
   border-color: #FF0000;
   border-width: .2rem;
 }
+
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
@@ -166,6 +167,21 @@ mark.red {
     font-weight: 400;
     font-family: 'Work Sans', sans-serif !important;
     font-size: 3rem;
+    margin-bottom: .2rem;
+  }
+
+  .hero-menu {
+    font-weight: 250;
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-menu:after {
+    content: "_";
+    color: #FF0000;
+    opacity: 1;
+    animation: cursor 1s infinite;
   }
 }
 
@@ -602,14 +618,14 @@ pre {
   margin: 0 auto;
   min-height: 100%;
   width: 100%;
-  background: white;
+  background: black;
 }
 
 .term {
   font-family: monospace;
-  color: #000;
+  color: #FFF;
   opacity: 0.8;
-  font-size: 2em;
+  font-size: 2rem;
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 10px;
@@ -618,6 +634,7 @@ pre {
 
 .term:after {
   content: "_";
+  color: #FF0000;
   opacity: 1;
   animation: cursor 1s infinite;
 }

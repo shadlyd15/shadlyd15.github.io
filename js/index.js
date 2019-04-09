@@ -24,18 +24,19 @@ function runner() {
 var count = 0;
 var time = 1;
 function feedbacker() {
-  textarea.append("[    " + count / 1000 + "] " + output[i] + "<br>");
+  var log_time = count / 1000; 
+  textarea.append("<span class=\"red\">[   </span>" + log_time.toFixed(3)+ "<span class=\"red\"> ] </span>" + output[i] + "<br>");
   if (time % 2 == 0) {
     i++;
-    textarea.append("[    " + count / 1000 + "] " + output[i] + "<br>");
+    textarea.append("<span class=\"red\">[   </span>" + log_time.toFixed(3)+ "<span class=\"red\"> ] </span>" + output[i] + "<br>");
   }
   if (time == 3) {
     i++;
-    textarea.append("[    " + count / 1000 + "] " + output[i] + "<br>");
+    textarea.append("<span class=\"red\">[   </span>" + log_time.toFixed(3)+ "<span class=\"red\"> ] </span>" + output[i] + "<br>");
     i++;
-    textarea.append("[    " + count / 1000 + "] " + output[i] + "<br>");
+    textarea.append("<span class=\"red\">[   </span>" + log_time.toFixed(3)+ "<span class=\"red\"> ] </span>" + output[i] + "<br>");
     i++;
-    textarea.append("[    " + count / 1000 + "] " + output[i] + "<br>");
+    textarea.append("<span class=\"red\">[   </span>" + log_time.toFixed(3)+ "<span class=\"red\"> ] </span>" + output[i] + "<br>");
   }
   window.scrollTo(0, document.body.scrollHeight);  
   i++;
@@ -48,7 +49,7 @@ function feedbacker() {
       else {
         textarea.append("<br>Initialising...<br>");
         setTimeout(function() {
-          // $(".load").fadeOut(1000);
+          $(".load").css("background-color", "white");
           $(".load").load( "content.html",function(){}).hide().fadeIn(2500);
         }, 500);
       }
