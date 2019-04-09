@@ -55,7 +55,6 @@ function feedbacker() {
     },time);
 }
 
-var content = ""
 
 var output = ["CPU0 microcode updated early to revision 0x1b, date = 2014-05-29",
 "Initializing cgroup subsys cpuset",
