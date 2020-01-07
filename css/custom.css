@@ -1,11 +1,8 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-html *
-{
-   
-}
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
@@ -20,10 +17,6 @@ body {
 
 .button {
   border-radius: 100px;
-}
-
-.body{
-    
 }
 
 /* Sections
@@ -57,18 +50,18 @@ body {
   /*background-image: url('../images/values-bg.jpg');*/
   background-size: cover;
   background-color: #000000;
-  color: #FFF;
+  color: #fff;
   /*padding-bottom: 5rem;*/
 }
 .value-multiplier {
-  margin-bottom: .5rem;
-  color: #FFF;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 .value-heading {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 .value-description {
-  opacity: .8;
+  opacity: 0.8;
   font-weight: 300;
 }
 
@@ -77,18 +70,18 @@ body {
   font-weight: 300;
 }
 
-.myButton{
-  color:#FF0000;
+.myButton {
+  color: #ff0000;
   background-color: #ffffff;
   border-color: #000000;
-  border-width: .2rem;
+  border-width: 0.2rem;
 }
 
-.myButton:hover{
-  color:#000;
+.myButton:hover {
+  color: #000;
   /*background-color: #000;*/
-  border-color: #FF0000;
-  border-width: .2rem;
+  border-color: #ff0000;
+  border-width: 0.2rem;
 }
 
 /* Help
@@ -103,24 +96,24 @@ body {
   /*background-image: url('../images/values-bg.jpg');*/
   background-size: cover;
   background-color: #000000;
-  color: #FFF;
+  color: #fff;
 }
 
-.categories .section-description { 
+.categories .section-description {
   margin-bottom: 4rem;
 }
 
-.box{
+.box {
   padding: 45px;
   /*border-size:15px;*/
   border-style: none none none solid;
-  border-color:red;
+  border-color: red;
   /*border-style: groove;*/
 }
 
 mark.red {
-    color:#ff0000;
-    background: none;
+  color: #ff0000;
+  background: none;
 }
 /* Bigger than 550 */
 @media (min-width: 550px) {
@@ -149,52 +142,50 @@ mark.red {
     max-height: 338px;
   }
   .hero-heading {
-
     /*color:#FF0000;*/
     font-weight: 300;
-    font-family: 'Work Sans', sans-serif !important;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 2.4rem;
-    margin-bottom: .0rem;
+    margin-bottom: 0rem;
   }
   .hero-name {
     font-weight: 700;
-    font-family: 'Work Sans', sans-serif !important;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 4.4rem;
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
   }
 
   .hero-profession {
     font-weight: 400;
-    font-family: 'Work Sans', sans-serif !important;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 3rem;
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
   }
 
   .hero-menu {
     font-weight: 250;
-    font-family: 'Work Sans', sans-serif !important;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   .hero-menu:after {
     content: "_";
-    color: #FF0000;
+    color: #ff0000;
     opacity: 1;
     animation: cursor 1s infinite;
   }
 }
 
-span.red{
-    color:#FF0000;
+span.red {
+  color: #ff0000;
 }
 
-span.yellow{
-    color:#FFC30F;
+span.yellow {
+  color: #ffc30f;
 }
 /* Bigger than 750 */
 @media (min-width: 750px) {
-
   .hero {
     vertical-align: middle;
     height: 190px;
@@ -238,7 +229,7 @@ span.yellow{
     /*padding: 22rem 0;*/
   }
   .hero-heading {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
   .phone {
     top: -16rem;
@@ -263,50 +254,50 @@ span.yellow{
   border-color: red;*/
 }
 
-.social-box{
+.social-box {
   border-style: solid;
   border-color: red;
 }
 
-.linkedin{
+.linkedin {
   /*background: black;
   color: #FFF;*/
 
   border-style: none none none solid;
-  border-color: #FF0000;
+  border-color: #ff0000;
 }
 
 .social:hover {
   background: red;
-  color:#FF0000;
+  color: #ff0000;
 
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   /*border-style: solid;
   border-color: red;*/
 }
 .social:hover.twitter {
-  color:#FFF;
+  color: #fff;
 }
 .social:hover.facebook {
-  color:#FFF;
+  color: #fff;
 }
 .social:hover.instagram {
-  color: #FFF;
+  color: #fff;
 }
 .social:hover.linkedin {
   /*background: white;
   color: #000;*/
 
-  color: #FFF;
+  color: #fff;
 }
 .social:hover.git {
-  color: #FFF;
+  color: #fff;
 }
 .social:hover.pinterest {
-  color: #FFF;
+  color: #fff;
 }
 .social:hover.email {
-  color: #FFF;
+  color: #fff;
 }
 
 @-webkit-keyframes glitch {
@@ -560,14 +551,14 @@ span.yellow{
 
 .glitch_text {
   font-weight: 100;
-  font-family: 'Exo 2';
+  font-family: "Exo 2";
   /*padding: 20px 0 20px 10px;*/
   font-size: 3em;
   position: relative;
   color: black;
   /*color:#FF0000;*/
   font-weight: 300;
-  font-family: 'Work Sans', sans-serif !important;
+  font-family: "Work Sans", sans-serif !important;
   font-size: 2.4rem;
   /*margin-bottom: .0rem;*/
 }
@@ -579,12 +570,12 @@ span.yellow{
   text-shadow: -1px 0 green;
   /*top: 20px;*/
   color: black;
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   /*color:#FF0000;*/
   font-weight: 300;
-  font-family: 'Work Sans', sans-serif !important;
+  font-family: "Work Sans", sans-serif !important;
   font-size: 2.4rem;
   /*margin-bottom: .0rem;*/
   -webkit-animation: glitch 2s infinite linear alternate-reverse;
@@ -597,21 +588,21 @@ span.yellow{
   text-shadow: 1px 0 red;
   /*top: 20px;*/
   color: black;
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   /*color:#FF0000;*/
   font-weight: 300;
-  font-family: 'Work Sans', sans-serif !important;
+  font-family: "Work Sans", sans-serif !important;
   font-size: 2.4rem;
   /*margin-bottom: .0rem;*/
   -webkit-animation: glitch2 3s infinite linear alternate-reverse;
 }
 
-
 pre {
   padding: 0;
   margin: 0;
+  white-space: pre-wrap;
 }
 
 .load {
@@ -623,18 +614,16 @@ pre {
 
 .term {
   font-family: monospace;
-  color: #FFF;
+  color: #fff;
   opacity: 0.8;
   font-size: 2rem;
-  overflow-y: auto;
-  overflow-x: hidden;
   padding-top: 10px;
   padding-left: 20px;
 }
 
 .term:after {
   content: "_";
-  color: #FF0000;
+  color: #ff0000;
   opacity: 1;
   animation: cursor 1s infinite;
 }
