@@ -7,6 +7,7 @@ var i = 0;
 runner();
 
 function runner() {
+  $(".load").css("background-color", "black");
   textarea.append(text.charAt(i));
   i++;
   setTimeout(function() {
