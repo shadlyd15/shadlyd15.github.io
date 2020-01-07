@@ -143,28 +143,28 @@ mark.red {
   }
   .hero-heading {
     /*color:#FF0000;*/
-    /* font-weight: 300; */
-    /* font-family: "Work Sans", sans-serif !important; */
+    font-weight: 300;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 2.4rem;
     margin-bottom: 0rem;
   }
   .hero-name {
-    /* font-weight: 700; */
-    /* font-family: "Work Sans", sans-serif !important; */
+    font-weight: 700;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 4.4rem;
     margin-bottom: 0.2rem;
   }
 
   .hero-profession {
-    /* font-weight: 400; */
-    /* font-family: "Work Sans", sans-serif !important; */
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 3rem;
     margin-bottom: 0.2rem;
   }
 
   .hero-menu {
-    /* font-weight: 250; */
-    /* font-family: "Work Sans", sans-serif !important; */
+    font-weight: 250;
+    font-family: "Work Sans", sans-serif !important;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -175,29 +175,6 @@ mark.red {
     opacity: 1;
     animation: cursor 1s infinite;
   }
-}
-
-.hero-heading {
-  font-weight: 300;
-}
-.hero-name {
-  font-weight: 700;
-}
-.hero-profession {
-  font-weight: 400;
-}
-.hero-menu {
-  font-weight: 250;
-}
-
-.hero-menu a {
-  color: #222222;
-  text-decoration: none;
-}
-
-.hero-menu a:hover {
-  color: #ff0000;
-  transition: color 0.2s ease-in;
 }
 
 span.red {
@@ -666,11 +643,5 @@ pre {
   }
   100% {
     opacity: 0;
-  }
-}
-
-@media (max-width: 550px) {
-  .term {
-    font-size: 1.5rem;
   }
 }
