@@ -7,7 +7,6 @@ var i = 0;
 runner();
 
 function runner() {
-  $(".load").css("background-color", "black");
   textarea.append(text.charAt(i));
   i++;
   setTimeout(function() {
@@ -74,6 +73,8 @@ function feedbacker() {
   time = Math.floor(Math.random() * 4) + 1;
   count += time;
   setTimeout(function() {
+    
+  $(".load").css("background-color", "black");
     if (i < output.length - 2) feedbacker();
     else {
       textarea.append("<br>Initialising...<br>");
