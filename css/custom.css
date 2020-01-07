@@ -158,7 +158,7 @@ mark.red {
   .hero-profession {
     /* font-weight: 400; */
     /* font-family: "Work Sans", sans-serif !important; */
-    font-size: 3rem;
+    /*font-size: 3rem;*/
     margin-bottom: 0.2rem;
   }
 
@@ -582,7 +582,7 @@ span.yellow {
   /*color:#FF0000;*/
   font-weight: 300;
   font-family: "Work Sans", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   /*margin-bottom: .0rem;*/
 }
 
@@ -599,7 +599,7 @@ span.yellow {
   /*color:#FF0000;*/
   font-weight: 300;
   font-family: "Work Sans", sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   /*margin-bottom: .0rem;*/
   -webkit-animation: glitch 2s infinite linear alternate-reverse;
 }
