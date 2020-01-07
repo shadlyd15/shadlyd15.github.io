@@ -74,16 +74,16 @@ function feedbacker() {
   count += time;
   setTimeout(function() {
     if (i < output.length - 2) feedbacker();
-    else {
-      textarea.append("<br>Initialising...<br>");
-      setTimeout(function() {
-        $(".load").css("background-color", "white");
-        $(".load")
-          .load("content.html", function() {})
-          .hide()
-          .fadeIn(2500);
-      }, 500);
-    }
+    // else {
+    //   textarea.append("<br>Initialising...<br>");
+    //   setTimeout(function() {
+    //     $(".load").css("background-color", "white");
+    //     $(".load")
+    //       .load("content.html", function() {})
+    //       .hide()
+    //       .fadeIn(2500);
+    //   }, 500);
+    // }
   }, time);
 }
 
