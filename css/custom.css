@@ -166,6 +166,7 @@ mark.red {
     /* font-weight: 250; */
     /* font-family: "Work Sans", sans-serif !important; */
     font-size: 2rem;
+    padding: .1em;
     margin-bottom: 1rem;
   }
 
@@ -187,7 +188,10 @@ mark.red {
   font-weight: 400;
 }
 .hero-menu {
-  font-weight: 350;
+/*  border-style: dashed;
+  border-color: red;
+  border-width: 1px;
+*/  font-weight: 350;
   margin-bottom: 1rem
 }
 
