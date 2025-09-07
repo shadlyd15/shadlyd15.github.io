@@ -1,66 +1,680 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55406772-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shadly Salahuddin - Embedded Software Developer</title>
+    <meta name="description" content="Portfolio of Shadly Salahuddin - Embedded Software Developer with expertise in C, C++, RTOS, and embedded systems">
+    <meta name="author" content="Shadly Salahuddin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  gtag('config', 'UA-55406772-2');
-	</script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
 
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <title>Shadly Salahuddin</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <!-- script -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
 
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
 
-    <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-
-    <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-
-    <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-  </head>
-  <body>
-    <div class="load">
-      <pre
-        class="term"
-      ><span class="red">root</span>@shadlyd15-PC<span class="red">:</span>~$ </pre>
-      <!-- **************************** Primary Page Layout **************************** -->
-      <!-- **************************** Primary Page Layout **************************** -->
+<body id="top">
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
-    <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/index.js"></script>
+    <!-- header -->
+    <header class="s-header">
+        <div class="s-header__logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
 
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  </body>
+        <div class="s-header__content">
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav">
+                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                    <li><a class="smoothscroll" href="#experience" title="Experience">Experience</a></li>
+                    <li><a class="smoothscroll" href="#skills" title="Skills">Skills</a></li>
+                    <li><a class="smoothscroll" href="#projects" title="Projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <a href="mailto:shadlyd15@gmail.com" class="btn btn--primary btn--small">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+                Hire Me
+            </a>
+        </div>
+
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <!-- hero -->
+    <section id="hero" class="s-hero target-section">
+        <div class="s-hero__bg">
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+                <h1>Hello.</h1>
+                <div class="s-hero__content-about">
+                    <p>
+                    I<strong style="color: red;">'</strong>m Shadly Salahuddin <br>
+                    <span class="subtext">Embedded Systems Engineer with 10+ years of experience in RTOS, Embedded Linux, and Baremetal low-level system programming.</span>
+                    </p>
+    
+                    <footer>
+                        <div class="s-hero__content-social">
+                            <a href="https://github.com/shadlyd15" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://linkedin.com/in/shadlyd15" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://shadlyd15.github.io/blog/" target="_blank"><i class="fas fa-globe" aria-hidden="true"></i></a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                Scroll Down
+            </a>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="s-about">
+        <div class="horizontal-line"></div>
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="section-title" data-num="01" data-aos="fade-up">
+                    <h3 class="h6">Who I Am</h3>
+                </div>
+            </div>
+
+            <div class="column large-6 w-900-stack s-about__intro-text">
+                <h1 class="display-1" data-aos="fade-up">
+                    Embedded Systems Engineer with deep expertise in bare-metal programming, real-time systems, and IoT development.
+                </h1>
+
+                <p class="lead" data-aos="fade-up">
+                    I design and deliver high-performance, secure, and reliable embedded platforms, with a proven track record of driving products 
+                    from initial architecture through production deployment in industries including telecommunications, smart metering, and IoT.
+                </p>
+            </div>
+
+            <div class="column large-6 w-900-stack s-about__photo-block">
+                <div class="s-about__photo" data-aos="fade-up" style="background-image: url('images/about-photo.jpg');"></div>
+            </div>
+        </div>
+
+
+<!-- <div class="row block-large-1-4 block-tab-full s-about__process item-list">
+    <div class="column item item-process" data-aos="fade-up">
+        <h3 class="item-title">8+</h3>
+        <p>Years in Embedded Systems</p>
+    </div>
+    <div class="column item item-process" data-aos="fade-up">
+        <h3 class="item-title">RTOS</h3>
+        <p>Real-Time Operating Systems Expertise</p>
+    </div>
+    <div class="column item item-process" data-aos="fade-up">
+        <h3 class="item-title">Linux</h3>
+        <p>Embedded Linux & Device Drivers</p>
+    </div>
+    <div class="column item item-process" data-aos="fade-up">
+        <h3 class="item-title">IoT</h3>
+        <p>Secure & Scalable IoT Solutions</p>
+    </div>
+</div> -->
+
+
+
+        <div class="row block-large-1-2 block-tab-full s-about__process item-list">
+            <div class="column item item-process" data-aos="fade-up">
+                <h3 class="item-title">Design</h3>
+                <p>
+                Architecting embedded systems with careful consideration of hardware constraints, 
+                real-time requirements, and power consumption. Creating efficient software designs 
+                that maximize performance while minimizing memory and storage footprint.
+                </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+                <h3 class="item-title">Develop</h3>
+                <p>
+                Implementing embedded software solutions in C/C++ for various platforms including 
+                FreeRTOS, Zephyr RTOS, and embedded Linux. Developing drivers, protocol implementations, 
+                and system services with a focus on reliability and maintainability.
+                </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+                <h3 class="item-title">Optimize</h3>
+                <p>
+                Profiling and benchmarking system performance to identify bottlenecks. Applying 
+                optimization techniques to reduce memory usage, improve execution speed, and 
+                extend battery life in resource-constrained environments.
+                </p>
+            </div>
+            <div class="column item item-process" data-aos="fade-up">
+                <h3 class="item-title">Deploy</h3>
+                <p>
+                Creating robust deployment mechanisms including Over-The-Air (OTA) update systems. 
+                Ensuring secure and reliable field updates with rollback capabilities and thorough 
+                testing procedures.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience -->
+    <section id="experience" class="s-services">
+        <div class="row">
+            <div class="column large-12">
+                <div class="section-title" data-num="02" data-aos="fade-up">
+                    <h3 class="h6">Professional Experience</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="row">
+            <div class="column large-12">
+                <div class="timeline">
+
+                     <!-- Cybernetics Hi-Tech Solutions Experience -->
+                    <div class="row">
+                        <div class="column large-12">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-header">
+                                    <h3>Cybernetics Hi-Tech Solutions Ltd.</h3>
+                                    <p class="timeline-meta">Senior Embedded Systems Engineer | Dhaka, Bangladesh | August 2025 - Present</p>
+                                </div>
+                                <div class="timeline-content">
+                                    <ul class="disc">
+                                        <li>Leading development of DLMS/COSEM-compliant smart metering solutions for large-scale deployments.</li>
+                                        <li>Architecting secure, standards-compliant communication stacks with multi-level authentication and encryption.</li>
+                                        <li>Driving protocol optimization and system integration for interoperability with utility infrastructures.</li>
+                                        <li>Mentoring junior engineers and establishing best practices for embedded systems design and testing.</li>
+                                        <li>Collaborating with cross-functional teams to ensure scalability, robustness, and compliance with global standards.</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-tech">
+                                    <ul class="stats-tabs">
+                                        <li><a href="#0">DLMS/COSEM</a></li>
+                                        <li><a href="#0">Smart Metering</a></li>
+                                        <li><a href="#0">ARM Cortex</a></li>
+                                        <li><a href="#0">AES-GCM</a></li>
+                                        <li><a href="#0">ECDSA</a></li>
+                                        <li><a href="#0">Embedded C/C++</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gira Experience -->
+                    <div class="row">
+                        <div class="column large-12">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-header">
+                                    <h3>Gira Giersiepen GmbH & Co. KG</h3>
+                                    <p class="timeline-meta">Embedded Systems Engineer | Radevormwald, Germany | Oct 2022 - Feb 2025</p>
+                                </div>
+                                <div class="timeline-content">
+                                    <ul class="disc">
+                                        <li>Integrated PJSIP as a media service into the software architecture of a product</li>
+                                        <li>Ported PJSIP for FreeRTOS and Zephyr RTOS on NXP MCU, focusing on achieving a highly optimized system with significantly reduced memory and storage footprint</li>
+                                        <li>Benchmarked MbedTLS for Zephyr RTOS on target hardware</li>
+                                        <li>Successfully ported PJSIP for the ESP32 platform, enabling G722 encoded SIP audio calling</li>
+                                        <li>Developed and documented a custom ALSA audio plugin for an embedded Linux platform using ALSA API in C language</li>
+                                        <li>Worked with KNX compliant devices and ecosystem</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-tech">
+                                    <ul class="stats-tabs">
+                                        <li><a href="#0">PJSIP</a></li>
+                                        <li><a href="#0">FreeRTOS</a></li>
+                                        <li><a href="#0">Zephyr</a></li>
+                                        <li><a href="#0">NXP MCU</a></li>
+                                        <li><a href="#0">ESP32</a></li>
+                                        <li><a href="#0">ALSA</a></li>
+                                        <li><a href="#0">KNX</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blackberry Experience -->
+                    <div class="row">
+                        <div class="column large-12">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-header">
+                                    <h3>Blackberry Secusmart GmbH</h3>
+                                    <p class="timeline-meta">Software Engineer | Dusseldorf, Germany | Sept 2020 - Sept 2022</p>
+                                </div>
+                                <div class="timeline-content">
+                                    <ul class="disc">
+                                        <li>Developed Python automation scripts using VMware UEM REST API, streamlining system processes and enhancing operational efficiency</li>
+                                        <li>Executed comprehensive test plans and established test environments in Red Hat Linux</li>
+                                        <li>Participated in the design of tests, test plans and test setup</li>
+                                        <li>Collaborated with multinational software teams for daily QA activities</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-tech">
+                                    <ul class="stats-tabs">
+                                        <li><a href="#0">Python</a></li>
+                                        <li><a href="#0">VMware UEM</a></li>
+                                        <li><a href="#0">REST API</a></li>
+                                        <li><a href="#0">Red Hat Linux</a></li>
+                                        <li><a href="#0">QA Automation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PeepThePlace Experience -->
+                    <div class="row">
+                        <div class="column large-12">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-header">
+                                    <h3>PeepThePlace</h3>
+                                    <p class="timeline-meta">Software Engineer | Dhaka, Bangladesh | May 2019 - Sept. 2019</p>
+                                </div>
+                                <div class="timeline-content">
+                                    <ul class="disc">
+                                        <li>Maintained and optimized Node.js/PostgreSQL backend deployed on AWS for a surveillance platform.</li>
+                                        <li>Integrated VAS payment APIs into existing Node.js services, extending platform monetization.</li>
+                                        <li>Extended GraphQL APIs to support multiple CCTV camera models, improving scalability and flexibility.</li>
+                                        <li>Built a custom OpenWrt firmware for NVR (Allwinner H3 SoC) tailored for surveillance workloads.</li>
+                                        <li>Built a custom FFmpeg with libx265, enabling high-efficiency H.265/HEVC video streaming optimized for embedded hardware.</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-tech">
+                                    <ul class="stats-tabs">
+                                        <li><a href="#0">Node.js</a></li>
+                                        <li><a href="#0">PostgreSQL</a></li>
+                                        <li><a href="#0">GraphQL</a></li>
+                                        <li><a href="#0">AWS</a></li>
+                                        <li><a href="#0">OpenWrt</a></li>
+                                        <li><a href="#0">FFmpeg</a></li>
+                                        <li><a href="#0">H.265/HEVC</a></li>
+                                        <li><a href="#0">Allwinner H3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Aplombtech Experience -->
+                    <div class="row">
+                        <div class="column large-12">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-header">
+                                    <h3>AplombtechBD Ltd</h3>
+                                    <p class="timeline-meta">Embedded Systems Engineer | Dhaka, Bangladesh | March 2016 - April 2019</p>
+                                </div>
+                                <div class="timeline-content">
+                                    <ul class="disc">
+                                        <li>Designed and developed DLMS/COSEM server application layer for ARM Cortex-M0 SoC</li>
+                                        <li>Developed ISO/IEC 13239:2002 High-level data link control layer for Smart Electric Meter communication</li>
+                                        <li>Implemented encryption (AES-GCM, ECDSA), authentication levels, and security policies for DLMS/COSEM protocol</li>
+                                        <li>Developed ASN1 tree encoder/decoder to parse xDLMS protocol and OBIS codes</li>
+                                        <li>Created lightweight MQTT client library in C++ for IoT Extension Module</li>
+                                        <li>Implemented DL/T645 metering protocol over UART (RS485)</li>
+                                        <li>Designed OTA firmware upgrade system using GSM modem for remote IoT nodes</li>
+                                        <li>Developed LoRaWAN gateway using SX1301 driver on OpenWrt platform for MediaTek SoC</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-tech">
+                                    <ul class="stats-tabs">
+                                        <li><a href="#0">DLMS/COSEM</a></li>
+                                        <li><a href="#0">ARM Cortex-M0</a></li>
+                                        <li><a href="#0">AES-GCM</a></li>
+                                        <li><a href="#0">ECDSA</a></li>
+                                        <li><a href="#0">MQTT</a></li>
+                                        <li><a href="#0">LoRaWAN</a></li>
+                                        <li><a href="#0">OpenWrt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- skills -->
+<section id="skills" class="s-services">
+  <div class="row">
+    <div class="column large-12">
+      <div class="section-title" data-num="03" data-aos="fade-up">
+        <h3 class="h6">Technical Arsenal</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column large-12">
+
+      <!-- Embedded Platforms -->
+      <div class="column item item-service" data-aos="fade-up">
+        <span class="service-icon service-icon--product-design"></span>
+        <h3 class="item-title">Embedded Platforms</h3>
+        <ul class="stats-tabs">
+          <li><a href="#0">FreeRTOS <em>Production-grade systems</em></a></li>
+          <li><a href="#0">Zephyr RTOS <em>Driver development, TLS benchmarks</em></a></li>
+          <li><a href="#0">Embedded Linux <em>Device drivers, OTA update frameworks</em></a></li>
+          <li><a href="#0">ARM Cortex-M series <em>Bare-metal & RTOS solutions</em></a></li>
+          <li><a href="#0">Arduino <em>Rapid prototyping & custom board</em></a></li>
+          <li><a href="#0">ESP32 <em>SIP stack, real-time audio</em></a></li>
+        </ul>
+      </div>
+
+      <!-- Protocols -->
+      <div class="column item item-service" data-aos="fade-up">
+        <span class="service-icon service-icon--branding"></span>
+        <h3 class="item-title">Protocols & Standards</h3>
+        <ul class="stats-tabs">
+          <li><a href="#0">SIP/PJSIP <em>VoIP integration</em></a></li>
+          <li><a href="#0">MQTT <em>Lightweight IoT messaging</em></a></li>
+          <li><a href="#0">DLMS/COSEM <em>Smart metering security</em></a></li>
+          <li><a href="#0">Modbus RTU/TCP <em>Industrial automation</em></a></li>
+          <li><a href="#0">TCP/IP <em>Networking fundamentals</em></a></li>
+          <li><a href="#0">ALSA API <em>Custom audio pipelines</em></a></li>
+        </ul>
+      </div>
+
+        <!-- Communication -->
+        <div class="column item item-service" data-aos="fade-up">
+          <span class="service-icon service-icon--ecommerce"></span>
+          <h3 class="item-title">Communication</h3>
+          <ul class="stats-tabs">
+            <li><a href="#0">Wi-Fi <em>Wireless networking</em></a></li>
+            <li><a href="#0">Bluetooth/BLE <em>Short-range device communication</em></a></li>
+            <li><a href="#0">Ethernet <em>Reliable wired networking</em></a></li>
+            <li><a href="#0">LoRaWAN <em>Long range connectivity</em></a></li>
+
+            <!-- Peripherals -->
+            <li><a href="#0">SPI <em>High-speed peripheral interface</em></a></li>
+            <li><a href="#0">I²C <em>Sensor communication</em></a></li>
+            <li><a href="#0">UART/Serial <em>Legacy serial protocols</em></a></li>
+            <li><a href="#0">USB <em>Universal peripheral interface</em></a></li>
+            <li><a href="#0">DMA <em>Direct memory access for fast transfers</em></a></li>
+          </ul>
+        </div>
+
+      <!-- Tools -->
+      <div class="column item item-service" data-aos="fade-up">
+        <span class="service-icon service-icon--frontend"></span>
+        <h3 class="item-title">Toolchain & Debugging</h3>
+        <ul class="stats-tabs">
+          <li><a href="#0">GCC/Clang <em>Cross-compilation</em></a></li>
+          <li><a href="#0">Make/CMake <em>Build automation</em></a></li>
+          <li><a href="#0">GDB/Valgrind <em>Low-level debugging</em></a></li>
+          <li><a href="#0">Git/Docker <em>Version control & CI/CD</em></a></li>
+          <li><a href="#0">Yocto/Buildroot <em>Custom Linux distributions</em></a></li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="column item item-service" data-aos="fade-up">
+        <span class="service-icon service-icon--branding"></span>
+        <h3 class="item-title">Security & Cryptography</h3>
+        <ul class="stats-tabs">
+          <li><a href="#0">AES-GCM <em>Secure communications</em></a></li>
+          <li><a href="#0">ECDSA <em>Authentication systems</em></a></li>
+          <li><a href="#0">MbedTLS/OpenSSL <em>Benchmarking & integration</em></a></li>
+          <li><a href="#0">Secure Boot <em>Firmware integrity</em></a></li>
+          <li><a href="#0">PKI & TLS/DTLS <em>IoT provisioning & transport security</em></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        <!-- projects -->
+    <section id="projects" class="s-portfolio">
+        <div class="row s-porfolio__top">
+            <div class="column large-6 w-900-stack">
+                <div class="section-title" data-num="04" data-aos="fade-up">
+                    <h3 class="h6">Personal Projects</h3>
+                </div>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <h1 class="display-1" data-aos="fade-up">
+                    Discover my open-source projects that combine technical curiosity with hands-on engineering, turning ambitious ideas into inventive, fully functional solutions.
+                </h1>
+            </div>
+        </div>
+
+        <!-- Project Details in Card Format -->
+        <div class="row block-large-1-2 block-tab-full s-services__services item-list">
+            <div class="column item item-service" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="service-icon service-icon--product-design"></span>
+                        <h3 class="item-title">
+                            <a href="https://github.com/shadlyd15/NesUEFI" target="_blank" rel="noopener noreferrer">
+                                NesUEFI
+                            </a>
+                        </h3>
+                        <p class="item-meta">Embedded Systems | UEFI, x86_64, C</p>
+                    </div>
+                    <div class="project-card-content">
+                        <p>A bootable NES Emulator running on UEFI without any operating system on x86_64 CPU. This project demonstrates deep understanding of low-level system programming and hardware interaction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column item item-service" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="service-icon service-icon--research"></span>
+                        <h3 class="item-title">
+                            <a href="https://github.com/shadlyd15/DoomLinux" target="_blank" rel="noopener noreferrer">
+                                DoomLinux
+                            </a>
+                        </h3>
+                        <p class="item-meta">Embedded Linux | Linux Kernel, Shell Scripting</p>
+                    </div>
+                    <div class="project-card-content">
+                        <p>A script to build a minimal live Linux OS from the kernel up that runs Doom immediately on boot. Showcases expertise in Linux system building and optimization.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column item item-service" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="service-icon service-icon--branding"></span>
+                        <h3 class="item-title">
+                            <a href="https://github.com/shadlyd15/AirBootGSM" target="_blank" rel="noopener noreferrer">
+                                AirBootGSM
+                            </a>
+                        </h3>
+                        <p class="item-meta">IoT | AVR, Arduino, GSM, C++</p>
+                    </div>
+                    <div class="project-card-content">
+                        <p>An AVR & Arduino Bootloader for Over-The-Air (OTA) firmware upgrade using GSM modem. Enables remote updates of embedded devices without physical access.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column item item-service" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="service-icon service-icon--frontend"></span>
+                            <h3 class="item-title">
+                            <a href="https://github.com/shadlyd15/Chess-x86" target="_blank" rel="noopener noreferrer">
+                                Chess x86
+                            </a>
+                            </h3>
+                        <p class="item-meta">Low-level Programming | x86 Assembly, Bare Metal</p>
+                    </div>
+                    <div class="project-card-content">
+                        <p>A bootable chess game running directly on bare metal x86_64 CPU without any operating system. Demonstrates mastery of assembly language and hardware control.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column item item-service" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="service-icon service-icon--illustration"></span>
+                        <h3 class="item-title">
+                            <a href="https://github.com/shadlyd15/DoomLinux" target="_blank" rel="noopener noreferrer">
+                                Bengali Robot
+                            </a>
+                        </h3>
+                        <p class="item-meta">Robotics | Python, AI, Computer Vision</p>
+                    </div>
+                    <div class="project-card-content">
+                        <p>A Robocar controlled through facial gestures and Bengali voice commands. Combines robotics, AI, and natural language processing for intuitive control.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column item item-service" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                        <h3 class="item-title">
+                            <a href="https://github.com/shadlyd15/Solarium" target="_blank" rel="noopener noreferrer">
+                                Solarium
+                            </a>
+                        </h3>
+                        <p class="item-meta">Web Development | three.js, JavaScript, WebGL</p>
+                    </div>
+                    <div class="project-card-content">
+                        <p>A scaled 3D solar system model made with three.js. Demonstrates strong JavaScript skills and ability to create interactive web-based visualizations.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column item item-service" data-aos="fade-up">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="service-icon service-icon--product-design"></span>
+                        <h3 class="item-title">
+                            <a href="https://github.com/shadlyd15/Arduinative" target="_blank" rel="noopener noreferrer">
+                                Arduinative
+                            </a>
+                        </h3>
+                        <p class="item-meta">Embedded Development | x86_64, Linux, C++</p>
+                    </div>
+                    <div class="project-card-content">
+                        <p>A mock Arduino core to build and run Arduino sketches in x86_64 Linux environment. Enables Arduino development and testing without physical hardware.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- education -->
+    <!--     <section id="education" class="s-services">
+            <div class="row">
+                <div class="column large-12">
+                    <div class="section-title" data-num="05" data-aos="fade-up">
+                        <h3 class="h6">Education</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row block-large-1-1 s-services__services item-list">
+                <div class="column item item-service" data-aos="fade-up">
+                    <span class="service-icon service-icon--product-design"></span>
+                    <h3 class="item-title">Rajshahi University of Engineering & Technology</h3>
+                    <p class="item-meta">Bachelor of Science, Electrical & Electronic Engineering</p>
+                    <p class="item-meta">Rajshahi, Bangladesh | Jan 2011 – June 2016</p>
+                </div>
+            </div>
+        </section> -->
+
+    <!-- contact -->
+    <section class="s-contact">
+        <div class="row narrower s-contact__top h-text-center">
+            <div class="column">
+                <h3 class="h6">Get In Touch</h3>
+                <h1 class="display-1">
+                    Interested in working together? Let's talk about your next embedded systems project.
+                </h1>
+            </div>
+        </div>
+
+        <div class="row h-text-center">
+            <div class="column">
+
+
+        <a class="btn btn--stroke" href="mailto:shadlyd15@gmail.com">Let's talk</a>
+            </div>
+        </div>
+
+<!--         <a href="mailto:shadlyd15@gmail.com" class="btn btn--primary btn--small">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+            Get in touch
+        </a> -->
+    </section>
+
+    <!-- footer -->
+    <footer class="s-footer">
+        <div class="row row-y-top">
+            <div class="column large-8 medium-12">
+                <div class="row">
+                    <div class="column large-7 tab-12 s-footer__block">
+                        <h4 class="h6">Contact Information</h4>
+                        <p>
+                        Dhaka 1205, Bangladesh<br>
+                        <a href="tel:+8801336567750">+8801336567750</a><br>
+                        <a href="mailto:shadlyd15@gmail.com">shadlyd15@gmail.com</a>
+                        </p>
+                    </div>
+        
+                    <div class="column large-5 tab-12 s-footer__block">
+                        <h4 class="h6">Follow Me</h4>
+                        <ul class="s-footer__list">
+                            <li><a href="https://github.com/shadlyd15" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/shadlyd15" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://shadlyd15.github.io/blog/" target="_blank">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column large-4 medium-12 s-footer__block--end">
+                <a href="mailto:shadlyd15@gmail.com" class="btn h-full-width">Let's Talk</a>
+
+                <div class="ss-copyright">
+                    <span>Copyright Shadly Salahuddin 2025</span> 
+                </div>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    top
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Java Script -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
