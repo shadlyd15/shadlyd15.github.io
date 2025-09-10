@@ -20,12 +20,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs640"><rect
-     x="0.20123151"
-     y="0.34489802"
-     width="164.83026"
-     height="23.813707"
-     id="rect750" /></defs><sodipodi:namedview
+   id="defs640" /><sodipodi:namedview
    id="namedview638"
    pagecolor="#ffffff"
    bordercolor="#000000"
@@ -49,11 +44,10 @@
 
 
 
-<text
-   xml:space="preserve"
-   id="text748"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:CPMono_v07;-inkscape-font-specification:CPMono_v07;white-space:pre;shape-inside:url(#rect750);display:inline;fill:#d9083c"
-   transform="matrix(2.2924724,0,0,1.7462588,-1.7932795,-6.4677466)"><tspan
-     x="0.20117188"
-     y="16.865733"
-     id="tspan273">SHADLY</tspan></text></svg>
+<rect
+   style="fill:#ffffff;fill-opacity:1;stroke-width:0.914453"
+   id="rect327"
+   width="153.45279"
+   height="10.890082"
+   x="7.0386481"
+   y="6.7740059" /></svg>
